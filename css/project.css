@@ -1,0 +1,302 @@
+body{
+    background-color: #00012B;
+}
+
+.works {
+    color: white;
+}
+
+.works:hover, .works:focus{
+    color: #3FC2E1;
+    transition: all ease-in-out 0.5s;
+}
+
+.project-title{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.project_picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.reflection{
+    opacity: 0.3;
+    transform: rotateX(180deg);
+}
+
+.project-title h2{
+    position: absolute;
+    right: 1.5rem;
+    font-size: 2rem;
+    text-align: end;
+}
+
+.tag{
+    position: absolute;
+    top: 52%;
+    right: 2rem;
+    color: white;
+    text-shadow: 0 0 1rem black;
+
+}
+
+.project-title p{
+    font-weight: bolder;
+    text-align: end;
+}
+
+@media(width >= 80rem){
+    .reflection{
+        display: none;
+    }
+}
+
+/* responsive for nav name */
+@media(64rem <= width < 120rem){
+    .name{
+        font-size: 1.75rem;
+    }
+}
+
+@media(width >= 120rem){
+    .name{
+        font-size: 2rem;
+    }
+}
+
+/* responsive for project title */
+@media(40rem <= width < 64rem){
+    .project-title h2{
+        font-size: 2.5rem;
+        right: 2rem;
+    }
+
+    .tag{
+        right: 2.5rem;
+        top: 54%;
+    }
+}
+
+@media(64rem <= width < 80rem){
+    .project-title h2{
+        font-size: 5rem;
+        right: 3rem;
+    }
+
+    .tag{
+        right: 3.5rem;
+        top: 56%;
+    }
+}
+
+@media(80rem <= width < 120rem){
+    .project-title h2{
+        font-size: 6.5rem;
+        /* right: 4rem; */
+        right: 15%;
+    }
+
+    .tag{
+        /* right: 4.5rem; */
+        right: 15%;
+        top: 58%;
+    }
+}
+
+@media(width >= 120rem){
+    .project-title h2{
+        font-size: 10rem;
+        /* right: 4.5rem; */
+        right: 13%;
+    }
+
+    .tag{
+        /* right: 5rem; */
+        right: 13%;
+        top: 58%;
+    }
+}
+
+/* content styling */
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    padding: 2rem 2rem 12rem 2rem;
+}
+
+/* responsive for content width */
+@media(40rem <= width < 64rem){
+    .project-content{
+        padding-right: 2.5rem;
+    }
+}
+
+@media(64rem <= width < 80rem){
+    .project-content{
+        padding-right: 3.5rem;
+        width: 80%;
+    }
+}
+
+@media(80rem <= width <= 120rem){
+    .project-content{
+        padding-right: 4.5rem;
+        width: 75%;
+        right: 10%;
+    }
+}
+
+@media(width > 120rem){
+    .project-content{
+        padding-right: 5rem;
+        width: 75%;
+        right: 10%;
+    }
+}
+
+.project-content p{
+    margin-bottom: 1rem;
+}
+
+.visit{
+    font-family: 'neucha';
+    font-size: 1rem;
+    color: #3FC2E1;
+    text-align: end;
+    align-self: flex-end;
+    padding-right: 0.25rem;
+}
+
+.project-content a{
+    text-decoration-color: #3FC2E1;
+}
+
+video{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0 1rem 0;
+}
+
+.p1{
+    font-weight: bolder;
+    margin-top: 2rem;
+    color: #3FC2E1;
+}
+
+@media(width >= 80rem){
+    video{
+        padding: 4rem 0 2rem 0;
+    }
+
+    .p1{
+        margin-top: 4rem;
+    }
+}
+
+/* storyboard grid */
+.storyboard-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.storyboard-img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+@media(40rem >= width > 80rem){
+    .storyboard-grid{
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+
+}
+
+@media(width >= 80rem){
+    .storyboard-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
+    }
+
+}
+
+/* Room Interior */
+.interior-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.interior-grid img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* poster */
+.poster-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.poster-flex img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+li{
+    font-size: 1rem;
+    margin-left: 1.25rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+@media(80rem <= width <= 120rem){
+    li{
+        font-size: 1.25rem;
+    }
+
+    .links{
+        gap: 1rem;
+    }
+}
+
+@media(width > 120rem){
+    li{
+        font-size: 1.75rem;
+    }
+
+    .links{
+        gap: 1rem;
+    }
+}

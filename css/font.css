@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "neucha";
+    font-weight: normal;
+    font-style: normal;
+    src: url('../font/Neucha/Neucha-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "just_another_hand";
+    font-weight: normal;
+    font-style: normal;
+    src: url('../font/Just_Another_Hand/JustAnotherHand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "shadow_into_light";
+    font-weight: normal;
+    font-style: normal;
+    src: url('../font/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf') format('truetype');
+}

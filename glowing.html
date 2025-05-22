@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>yna32 glowing</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/main.css">      
+        <link rel="stylesheet" href="css/project.css">  
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html"><h1 class="nav-item name">yankai n.</h1></a>
+            <a href="index.html"><div class="nav-item works">works</div></a>
+            <a href="about.html"><div class="nav-item about">about</div></a>
+            <a href="about.html#contact"><div class="nav-item contact">contact</div></a>
+        </nav>
+
+        <section id="glowing" class="project-title">
+            <div class="img-container">
+                <img 
+                    src="img/glowing_cover_min.png" data-src="img/glowing_cover"
+                    alt="Glowing forest at night with starry sky"
+                    srcset="
+                        img/glowing_cover_min.png 1692w,
+                    "
+                    sizes="
+                        (min-width: 64rem) 100vw
+                    "
+                    class="project_picture lazy"
+                >
+                <script src="js/vanilla-lazyload.js"></script>
+                
+
+                <img 
+                src="img/glowing_cover.png" data-src="img/glowing_cover"
+                alt="Glowing forest at night with starry sky"
+                srcset="
+                    img/glowing_cover_min.png 1692w,
+                "
+                sizes="
+                    (min-width: 64rem) 100vw
+                "
+                class="project_picture reflection"
+                >
+            </div>
+            
+            <h2>GLOWING</h2>
+
+            <div class="tag">
+                <p>2024</p>
+                <p>vr game</p>
+                <p>blender</p>
+                <p>unity</p>
+                <p>team of four</p>                
+            </div>
+        </section>
+
+
+        <section class="project-content">
+            <p>Glowing is a therapeutic VR experience for players to discover a wounded mythical creature in the woods and heal it using traditional Chinese medicine practices. Through interactions like collecting herbs, crafting remedies, and feeding the creature, players embark on an emotional journey of growth, care, and exploration.</p>
+            <a href="https://vsiyue4.wixsite.com/glowing" target="_blank"><div class="visit">PROJECT WEBSITE ⤷</div></a>
+            
+            <video width="960" height="540" controls aria-label="trailer video for Glowing VR game">
+                <source src="img/horizontal.png" type="image/jpg">
+                <source src="img/glowing_trailer.mp4" type="video/mp4">
+            </video>
+            <a href="https://youtu.be/sGKxGjPgpms" target="_blank"><div class="visit">PROJECT TRAILER ⤷</div></a>
+
+            <!-- storyboard -->
+            <p class="p1">Storyboard/Narration</p>
+            <p>Considering the narrative and hardness of the game level, we initially planned three distinct settings: a mountain, an outdoor farming system, and an indoor healing and creature interaction system. </p>
+
+            <div class="storyboard-grid">
+                <img src="img/storyboard/storyboard1.png" alt="storyboard1 opening scene" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard2.png" alt="storyboard2 hearing whining from the back" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard3.png" alt="storyboard3 turning around found wounded creature" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard4.png" alt="storyboard4 options between save or ignore" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard5.png" alt="storyboard5 room interior" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard6.png" alt="storyboard6 workstation" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard7.png" alt="storyboard7 going to the yard" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard8.png" alt="storyboard8 yard" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard9.png" alt="storyboard9 herb medicine instruction" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard10.png" alt="storyboard10 creature having the medicine" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard11.png" alt="storyboard11 going to bed" width="2732" height="2048" class="storyboard-img">
+                <img src="img/storyboard/storyboard12.png" alt="storyboard12 the creature is recovered" width="2732" height="2048" class="storyboard-img">
+            </div>
+
+            <p>After extensive modelling and feedback, I found the story too complex for our scope. Developing multiple settings and systems left little time to refine gameplay, especially creature interactions. I simplified it to a mountain and a house, removed farming, and focused on potion-making.</p>
+
+            <!-- modelling -->
+            <p class="p1">Room Interior Modelling in Blender</p>
+            <p>I'm responsible for modelling the room interior, including the bedroom, workstation, and overall layout, and delivering it to Unity for interaction programming.</p>
+            <p>I aimed for a Chinese ink painting style for its traditional beauty. However, the detailed 2D artwork and matching 3D models proved too time-consuming. To maintain consistency, after discussion, I switched to a simple, low-poly 3D style while keeping a Chinese-inspired interior design.</p>
+
+            <div class="interior-grid">
+                <img src="img/interior/ceiling_white.png" alt="ceiling white model Blender" width="1919" height="1040">
+                <img src="img/interior/ceiling_rendered.png" alt="ceiling rendered Blender" width="1919" height="1040">
+                <img src="img/interior/wall_white.png" alt="wall white model Blender" width="1919" height="1040">
+                <img src="img/interior/wall_rendered.png" alt="wall rendered Blender" width="1919" height="1040">
+                <img src="img/interior/all_white.png" alt="all white model Blender" width="1919" height="1040">
+                <img src="img/interior/all_rendered.png" alt="all rendered Blender" width="1919" height="1040">
+            </div>
+
+            <!-- poster -->
+            <p class="p1">Poster Design</p>
+            <p>I created an executive summary to present our VR game's concept, goals, and value to stakeholders like showcase attendees, evaluators, and professors. I designed it as a bifold brochure for easy display, distribute, and engage with during showcase.</p>
+            <div class="poster-flex">
+                <img src="img/poster/excutive_front.png" alt="excutive poster front page" width="1684" height="1190">
+                <img src="img/poster/excutive_inner.png" alt="excutive poster inner page" width="1684" height="1190">
+            </div>
+
+            <!-- key takeaways -->
+            <p class="p1">Key Takeaways</p>
+            <ul>
+                <li>managed team workflow and coordination as lead manager, modeler and UX designer</li>
+                <li>balancing ambition with available time and resources by simplifying the story and gameplay</li>
+                <li>understanding the VR game development process</li>                
+            </ul>
+
+
+            <p class="p1">Skills Strengthened</p>
+            <p>3D Modelling | Environment Design | Unity Integration | Team Leadership | Gameplay Iteration</p>
+
+            <!-- links  -->
+            <div class="links">
+                <a href="https://youtu.be/pbw7oThmYSk" target="_blank"><div class="visit">PROJECT VIDEO ⤷</div></a>
+                <a href="https://youtu.be/5FJIcoL7LB8" target="_blank"><div class="visit">GAME PLAYTHROUGH ⤷</div></a>
+                <a href="https://docs.google.com/document/d/1LUIE3EJcvxx_QZbYXbkgOYioR2Na7lF8PzMt8pa9Lpg/edit?usp=drive_link" target="_blank"><div class="visit">VR DESIGN DOCUMENT ⤷</div></a>
+                <a href="https://drive.google.com/file/d/1BR4RSV5INi0RfSaZq4buXhlh5yt4PXzj/view?usp=drive_link" target="_blank"><div class="visit">GLOWING DOWNLOAD ⤷</div></a>                
+            </div>
+
+
+
+        </section>
+
+    </body>
+</html>

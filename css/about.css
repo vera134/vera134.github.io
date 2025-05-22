@@ -1,0 +1,211 @@
+/* styling the about page */
+html{
+    height: 100%;
+    /* padding-top: 10rem; */
+}
+
+/* nav */
+.works {
+    color: white;
+}
+
+.works:hover, .works:focus{
+    color: #3FC2E1;
+    transition: all ease-in-out 0.5s;
+}
+
+.about {
+    color: #3FC2E1;
+}
+
+
+/* about */
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin: auto auto;
+    padding: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about-img{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    opacity: 0.35;
+    z-index: -100;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about, #contact{
+    align-self: flex-end;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+#about h2, #contact h2{
+    font-family: 'neucha';
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #3FC2E1;
+}
+
+#about{
+    padding-bottom: 2rem;
+}
+
+#contact{
+    padding-bottom: 5rem;
+}
+
+.job{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* softwares */
+.software-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.icon{
+    height: 66%;
+    width: auto;
+}
+
+/* styling the contact grid*/
+.contact-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.linkedin{
+    justify-self: end;
+}
+
+/* responsive for content width */
+@media(40rem <= width < 64rem){
+    #about, #contact{
+        width: 80%;
+    }
+
+    .contact-grid{
+        grid-template-columns: 2.5fr 1fr 1fr;
+    }
+}
+
+@media(64rem <= width){
+    #about, #contact{
+        width: 45%;
+    }
+
+    #about{
+        padding-bottom: 2rem;
+    }
+
+    .contact-grid{
+        grid-template-columns: 2.5fr 1fr 1fr;
+    }
+}
+
+/* responsive for h2 */
+@media(width > 40rem){
+    .job{
+        text-align: start;
+    }
+}
+
+@media(80rem <= width <= 120rem){
+    #about h2, #contact h2{
+        font-size: 1.25rem;
+    }
+}
+
+@media(width > 120rem){
+    #about h2, #contact h2{
+        font-size: 1.75rem;
+    }
+}
+
+/* responsive for padding */
+@media(40rem <= width < 80rem){
+    #about, #contact{
+        padding: 0 2rem;
+    }
+
+    #about{
+        padding-bottom: 2rem;
+    }
+}
+
+@media(80rem <= width <= 120rem){
+    #about, #contact{
+        padding: 0 3.25rem;
+    }
+
+    #about{
+        padding-bottom: 2rem;
+    }
+}
+
+@media(width > 120rem){
+    #about, #contact{
+        padding: 0 4.5rem;
+    }
+
+    #about{
+        padding-bottom: 2rem;
+    }
+}
+
+/* responsive for img */
+@media(40rem <= width < 64rem){
+    .about-img{
+        height: 100%;
+        width: auto;
+        left: 10%;
+        transform: none;
+    }
+}
+
+@media(64rem <= width <80rem){
+    .about-img{
+        height: 100%;
+        width: auto;
+        left: 20%;
+        transform: none;
+    }
+}
+
+@media(80rem <= width){
+    .about-img{
+        height: 100%;
+        width: auto;
+        left: 23%;
+        transform: none;
+    }
+}
+
+
